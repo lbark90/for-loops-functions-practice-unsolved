@@ -4,7 +4,14 @@
 
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
-
+  const numbers = [];
+  for (let i = 0; i <= max; i++) {
+    const sqrt = Math.sqrt(i);
+    if (Number.isInteger(sqrt)) {
+      numbers.push(i);
+    }
+  }
+  return numbers;
 }
 
 // === TEST YOURSELF ===
